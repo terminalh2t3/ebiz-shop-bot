@@ -5,10 +5,7 @@
   "logo": "https://www.marketingcloud.com/sites/exacttarget/files/partner-logos/e-biz_solutions_-_logo.png",
   "keywords": ["php", "Giga.ai", "Heroku Connect"],
   "websites": "https://terminalh2t3.github.io/ebiz-shop-bot/introduction/",
-  "success_url": "/public/seeder.php",
-  "scripts": {
-    "postdeploy": "vendor/bin/heroku-php-apache2"
-  },
+  
   "env": {
     "FACEBOOK_PAGE_ACCESS_TOKEN": {
       "description": "Your facebook page access token",
