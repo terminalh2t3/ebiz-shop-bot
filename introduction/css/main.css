@@ -134,8 +134,8 @@ Navigation
 }
 
 .navbar-brand {
-    height:70px;
-    padding:25px 15px;
+	height: 90px;
+    padding: 10px 15px;
 }
 
 .navbar-nav>li>a {
