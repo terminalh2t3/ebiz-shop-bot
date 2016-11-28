@@ -443,3 +443,11 @@ Responsive styles
 .navbar-fixed-top {
     position: absolute;
 }
+
+.introduction {
+    padding: 0 30px;
+    font-size: 20px;
+}
+.introduction a {
+    color: white;
+}
