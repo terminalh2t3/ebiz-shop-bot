@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": { "": "Api/" }
+    },
+    "require": {
+        "gigaai/framework": "dev-master",
+        "sendgrid/sendgrid": "~5.0.9"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
+}

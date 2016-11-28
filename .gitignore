@@ -1,0 +1,7 @@
+/vendor
+.DS_Store
+.env
+/var/cache
+/var/logs
+.idea/*
+/.idea/*
