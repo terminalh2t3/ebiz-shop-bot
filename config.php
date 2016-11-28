@@ -1,5 +1,5 @@
 <?php
-
+$url = parse_url(getenv('CLEARDB_DATABASE_URL'));
 return array(
 	/*
 	 |------------------------------------------------------------------------
@@ -10,7 +10,7 @@ return array(
 	 |
 	 */
 
-	'page_access_token' =>  'EAAUMIYZBFcu8BAGhg9K7Hvdvl0IXpTgZCVfS8fraHAy3XIi5HBZC2321UpF6diAdxCU7w7z3VDF8KkTQI9PE9RradZCExhluxwHdnHdrRZA5qYJJWoUKQpWF3FlFhCQxCsZBzaZAAzIaWzWRLZBcIHxZAAcdWtYPeo7ydppAE8PybjgZDZD',
+	'page_access_token' =>  getenv('FACEBOOK_PAGE_ACCESS_TOKEN'),
 
 	/*
 	 |------------------------------------------------------------------------
@@ -21,7 +21,7 @@ return array(
 	 |
 	 */
 
-	'page_id' => '346716535694607',
+	'page_id' => getenv('FACEBOOK_PAGE_ID'),
 
 	/*
 	 |------------------------------------------------------------------------
@@ -56,29 +56,10 @@ return array(
 	 */
 
     'mysql' => [
-        'host'      => 'us-cdbr-iron-east-04.cleardb.net',
-        'database'  => 'heroku_aed1426a52073c7',
-        'username'  => 'be0b9822497322',
-        'password'  => 'ce9a1361',
-        'charset'   => 'utf8',
-        'collation' => 'utf8_unicode_ci',
-        'prefix'    => '',
-    ],
-//    'mysql' => [
-//        'host'      => '127.0.0.1',
-//        'database'  => 'd1',
-//        'username'  => 'root',
-//        'password'  => '',
-//        'charset'   => 'utf8',
-//        'collation' => 'utf8_unicode_ci',
-//        'prefix'    => '',
-//    ],
-
-    'pgsql' => [
-        'host'      => 'ec2-54-235-65-139.compute-1.amazonaws.com',
-        'database'  => 'ddfrinp75cbc35',
-        'username'  => 'tmtnzwsrccaajs',
-        'password'  => 'GJP_KivfI-m4BylpD0ed1ZHXlg',
+        'host'      => $url['host'],
+        'database'  => substr($url["path"], 1),
+        'username'  => $url['user'],
+        'password'  => $url['pass'],
         'charset'   => 'utf8',
         'collation' => 'utf8_unicode_ci',
         'prefix'    => '',
@@ -93,7 +74,7 @@ return array(
      |
      */
 
-	'app_id' => '1420713164894959',
+	'app_id' => getenv('FACEBOOK_APP_ID'),
 
 	/*
 	 |------------------------------------------------------------------------
@@ -178,7 +159,7 @@ return array(
         [
             "type" => "web_url",
             "title" => "View Website",
-            "url" => "http://petersapparel.parseapp.com/"
+            "url" => "https://terminalh2t3.github.io/ebiz-shop-bot/introduction"
         ]
     ]
 );
