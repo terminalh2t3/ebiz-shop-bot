@@ -83,11 +83,26 @@
             <div class="row">
                 <div class="col-md-12">
                     <ol class="setup">
+                        <li>Create new app on your <a href="https://developers.facebook.com/">Facebook Developer</a></li>
                         <li>Install the Ebiz Bot package to your Salesforce org.<br><a href="#salesforce">Step-by-step Salesforce instructions</a></li>
                         <li>Deploy a copy of the app to Heroku.<br><a href="#heroku">Step-by-step Heroku instructions</a></li>
                         <li>Connect the Heroku Connect add-on to your Salesforce org, and import the configuraton json.<br><a href="#heroku-connect">Step-by-step Heroku Connect instructions</a></li>
                         <li>Restart your Heroku App dynos.<br><a href="#heroku-dyno-restart">Step-by-step Heroku Dyno Restart instructions</a></li>
+                        <li>Subscribe your Facebook Page to your Heroku Webhook</li>
                         <li class="numberless">Now you can start to work with Ebiz Bot.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <header class="block-heading cleafix" id="facebook">
+            <h2>Create Facebook App</h2>
+        </header>
+        <section class="block-body block-border-bottom">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="setup">
+                        <li>Create a new Facebook Application on <a href="https://developers.facebook.com/">Facebook Developer</a></li>
+                        <li>Get App ID, Page Access Token, Page ID and prepare for Heroku Config</li>
                     </ol>
                 </div>
             </div>
@@ -171,7 +186,7 @@
         <header class="block-heading cleafix"  id="heroku-dyno-restart">
             <h2>Restart Dyno</h2>
         </header>
-        <section class="block-body">
+        <section class="block-body block-border-bottom">
             <div class="row">
                 <div class="col-md-12">
                     <ol class="setup">
@@ -180,6 +195,30 @@
                         <li>Select <i>Restart all dynos</i>.</li>
                         <li>You will be prompted that this may result in downtime. Click <i>Restart all dynos</i> again.</li>
                         <li class="numberless">Now that your app is ready to go, get started with the <a href="walkthrough.html">Ebiz Bot Walkthrough</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <header class="block-heading cleafix"  id="subscribe-page">
+            <h2>Subscribe Facebook Page</h2>
+        </header>
+        <section class="block-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="setup">
+                        <li>Create a new Facebook Application on <a href="https://developers.facebook.com/">Facebook Developer</a></li>
+                        <li>
+                            Go to <b>Dash board</b>, in Product Section, click <b>+Add Product</b> and select <b>Messenger</b>
+                        </li>
+                        <li>
+                            In the <b>Messenger Settings</b>, scroll down to <b>Webhook</b> and click <b>Setup Webhooks</b>.
+                        </li>
+                        <li>
+                            In Callback URL, type "https://yourappname.herokuapp.com/public". In Verify Token, type "GigaAI". I will need to choose all the subscription fields and click <b>Verify and Save</b>
+                        </li>
+                        <li>
+                            Start chat with your Page :);
+                        </li>
                     </ol>
                 </div>
             </div>
