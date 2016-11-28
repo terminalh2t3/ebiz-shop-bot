@@ -1,10 +1,10 @@
 {
   "name": "Php Messenger Bot Showcase",
   "description": "This app using Facebook messenger platform with Giga.AI framework connect to Salesforce CRM via Heroku Connect",
-  "repository": "https://git.heroku.com/ebiz-store-bot.git",
+  "repository": "https://github.com/terminalh2t3/ebiz-shop-bot",
   "logo": "https://www.marketingcloud.com/sites/exacttarget/files/partner-logos/e-biz_solutions_-_logo.png",
   "keywords": ["php", "Giga.ai", "Heroku Connect"],
-  "websites": "http://ebizbot.herokuapp.com/introduction",
+  "websites": "https://terminalh2t3.github.io/ebiz-shop-bot/introduction/",
   "success_url": "/public/seeder.php",
   "scripts": {
     "postdeploy": "vendor/bin/heroku-php-apache2"
